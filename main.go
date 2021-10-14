@@ -18,7 +18,7 @@ func main() {
 	cYlw := "\033[33m"
 	cRst := "\033[0m"
 
-	symbol := flag.String("s","SHIBUSDT","Exchange rates and currency conversion.") 
+	symbol := flag.String("s","BTCUSDT","Exchange rates and currency conversion.") 
 	flag.Parse()
 
 	res, err := http.Get("https://api.binance.com/api/v3/ticker/price?symbol="+*symbol)
